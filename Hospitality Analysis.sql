@@ -1,4 +1,4 @@
-/* 1.Total Revenue*/
+/* 1.Total Revenue*/.
 select sum(revenue_realized) as TotalRevenue from fact_bookings;
 /* 2.Occupancy */
 select round(sum(successful_bookings)/sum(capacity)*100,2) as "Occupancy Rate" from fact_aggregated_bookings;
